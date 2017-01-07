@@ -1,0 +1,241 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+p {
+  margin-bottom: .8em;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***********MY CSS************/
+
+@font-face {
+    font-family: headerfont;
+    src: url(fonts/Amaranth-Bold.otf);
+}
+
+@font-face {
+    font-family: mono;
+    src: url(fonts/Lato-Regular.ttf);
+}
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+body {
+	font-family: mono;
+}
+
+#bodyWrapper {
+  max-width: 45em;
+  margin: 0 auto;
+}
+
+#nav {
+  background-color: rgba(0,0,0,.5);
+  text-align: center;
+  border-top-right-radius: 2em;
+  border-top-left-radius: 2em;
+  padding: 0 1em;
+}
+
+#nav li{
+  color: whitesmoke;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1em;
+  display: block;
+}
+
+#nav a:hover {
+  text-decoration: overline;
+  color: darkgrey;
+}
+
+#nav a{
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.bg-pic{
+  background: url("back.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.bg-black {
+  background-color:rgba(0,0,0,0.6);
+  color: white;
+}
+
+.bg-red {
+    background-color:rgba(90,0,0,0.5);
+    color: white;
+}
+
+.bg-blue {
+    background-color: rgba(10,100,200,.7);
+    color: white;
+}
+
+.text-underline {
+    text-decoration: underline;
+    color: white;
+}
+
+.header-text {   
+    font-size: 3em;
+    font-family: headerfont;
+    margin-top: .5em;
+    margin-right: .5em;
+    margin-left: .5em;
+    text-align: center;
+}
+
+.header-subtext {
+    font-size: 1.5em;
+    font-family: mono;
+    color: rgb(25,25,25);
+    text-align: center;
+    margin-bottom: 2em;
+    margin-right: 0em;
+}
+
+.footer {
+    margin: 0 auto;
+    color: white;
+    font-size: .8em;
+    margin-top: 1em;
+    padding: 1em;
+}
+
+.bottomborder {
+    border-style: solid;
+    border-bottom-width: 10px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-color: rgba(0,0,0,.8);
+}
+
+.contact {
+    float: right;
+    margin-top: 9%;
+}
+
+.bio {
+    font-size: 1em;
+    text-shadow: 2px 2px darkblue;
+    line-height: 1.5em;
+    padding: 1.5em;
+    margin: 0 auto;
+    overflow: auto;
+    border-bottom-left-radius: 2em;
+    animation: fadein;
+    animation-duration: 2s;
+}
+
+.profilepic {
+    display: none;
+}
+
+/**********************/
+
+#projects {
+  text-align: center;
+}
+
+.project {
+  width: 10em;
+  display: inline-block;
+  margin: 1em;
+}
+
+.project img {
+  width: 100%;
+  height: 5em;
+}
+
+@media screen and (min-width: 600px) {
+  .profilepic {
+    display: block;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    float: left;
+    margin-right: 2em;
+    width: 30%;
+  }
+  
+  .header-text {
+    font-size: 5em;
+				text-align: right;
+    margin-right: .15em;
+  }
+	
+	.header-subtext {
+    text-align: right;
+    margin-right: 1em;
+	}
+  
+  #nav {
+    text-align: right;
+  }
+  
+  #nav li {
+    display: inline-block;
+  }
+}
+
+
+
+
